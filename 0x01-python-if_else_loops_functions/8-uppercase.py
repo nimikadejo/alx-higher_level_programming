@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def uppercase(str):
     converter = ''
-    for word in str:
+    for letter in str:
         iterator = ord(str)
         if (iterator >= 97) and (iterator <= 122):
             converter += chr(iterator - 32)
