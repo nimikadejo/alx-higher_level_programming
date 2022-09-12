@@ -7,5 +7,5 @@ def safe_print_integer(value):
         print("{} is not an integer".format(value))
         return False
     else:
-        print("{} is an integer".format(value))
+        print("{:d}".format(value))
         return True
