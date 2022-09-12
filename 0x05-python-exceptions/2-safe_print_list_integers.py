@@ -6,9 +6,10 @@ def safe_print_list_integers(my_list=[], x=0):
         try:
             print("{:d}".format(my_list[item], end=""))
             int_len += 1
-        except IndexError as Err:
-            print("{}: list index out of range".format(Err.args))
+        except IndexError:
+            break
         except Exception:
             pass
+
     print('')
     return int_len
