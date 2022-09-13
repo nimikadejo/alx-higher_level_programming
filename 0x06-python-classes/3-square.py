@@ -23,4 +23,4 @@ class Square:
 
     def area(self):
         """calling field assgined to initialized methods"""
-        return (self.__size) * 2
+        return (self.__size) ** 2

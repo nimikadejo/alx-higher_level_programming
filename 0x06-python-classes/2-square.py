@@ -12,11 +12,12 @@ class Square:
             an integer"""
             raise TypeError("size must be an integer")
         """assigning error message for type err"""
-        elif size < 0:
+        else:
+            if size < 0:
             """if statement to guide negative ints"""
-            raise ValueError("size must be >= 0")
+                raise ValueError("size must be >= 0")
             """raising an exception for negative
                 integers"""
-        else:
+            else:
             self.__size = size
             """assigning field to an object"""
