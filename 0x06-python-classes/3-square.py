@@ -14,7 +14,7 @@ class Square:
         """assigning error message for type err"""
         if size < 0:
             """if statement to guide negative ints"""
-            raise ValueError("size must be <= 0")
+            raise ValueError("size must be >= 0")
             """raising an exception for negative
                 integers"""
         else:
