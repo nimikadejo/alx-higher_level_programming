@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 """A class that defines an object that must be
 a specific type (int)"""
 
@@ -12,16 +12,15 @@ class Square:
             an integer"""
             raise TypeError("size must be an integer")
         """assigning error message for type err"""
-        else:
-            if size < 0:
-                raise ValueError("size must be <= 0")
-                """raising an exception for negative
+        if size < 0:
+            """if statement to guide negative ints"""
+            raise ValueError("size must be <= 0")
+            """raising an exception for negative
                 integers"""
-            else:
-                self.__size = size
-                """assigning field to an object"""
+        else:
+            self.__size = size
+            """assigning field to an object"""
 
     def area(self):
-        """new object to return suare value of square"""
-        return (self.__size)
-        """returns value of init"""
+        """calling field assgined to initialized methods"""
+        return (self.__size) * 2
