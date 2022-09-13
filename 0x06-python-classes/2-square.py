@@ -7,17 +7,16 @@ class Square:
     """a defined class"""
     def __init__(self, size=0):
         """class intialization"""
-        if size.isdigit():
+        if type(size) is not int:
             """loop to make sure size input is
             an integer"""
             raise TypeError("size must be an integer")
         """assigning error message for type err"""
-        else:
-            if size < 0:
+        if size < 0:
             """if statement to guide negative ints"""
-                raise ValueError("size must be >= 0")
+            raise ValueError("size must be >= 0")
             """raising an exception for negative
                 integers"""
-            else:
+        else:
             self.__size = size
             """assigning field to an object"""
