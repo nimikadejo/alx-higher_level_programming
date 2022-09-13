@@ -7,7 +7,7 @@ class Square:
     """a defined class"""
     def __init__(self, size=0):
         """class intialization"""
-        if isdigit(size) is False:
+        if size.isdigit():
             """loop to make sure size input is
             an integer"""
             raise TypeError("size must be an integer")
