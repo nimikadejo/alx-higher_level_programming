@@ -13,9 +13,6 @@ Now use it:
     >>> say_my_name("Nimi", "Kadejo")
     My name is Nimi Kadejo
 
-    >>> say_my_name("Didi")
-    My name is Didi
-
     >>> say_my_name(24, "Nimi")
     Traceback (most recent call last):
     TypeError: first_name must be a string
@@ -49,3 +46,6 @@ Now use it:
     >>> say_my_name("arg1", "arg2", "arg3")
     Traceback (most recent call last):
     TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
+
+    >>> say_my_name("Didi")
+    My name is Didi 
