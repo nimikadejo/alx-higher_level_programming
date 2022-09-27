@@ -1,0 +1,25 @@
+The ``Print Sorted List`` module
+================================
+
+Using ``MyList``
+----------------
+
+First import ``MyList`` from the ``1-my_list`` module:
+
+    >>> MyList = __import__("1-my_list").MyList
+
+Using the function:
+
+	>>> a_list = MyList()
+	>>> a_list
+	[]
+
+	>>> a_list.append(7)
+	>>> a_list
+	[7]
+
+        >>> a_list.append(5)
+        >>> a_list.append(6)
+        >>> a_list
+        [7, 5, 6]
+
