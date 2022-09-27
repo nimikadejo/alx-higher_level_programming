@@ -3,5 +3,6 @@
 
 
 def class_to_json(obj):
-    """ returns dictionary description of an object that has been serialized with json"""
+    """ returns dictionary description of an object
+    that has been serialized with json"""
     return obj.__dict__
