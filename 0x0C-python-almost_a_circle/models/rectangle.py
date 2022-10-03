@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""
+""" 
 module for retangle class
 """
 
@@ -23,54 +23,63 @@ class Rectangle(Base):
         """
 
         super().__init__(id)
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
 
         @property
         def width(self):
             """ width getter """
-            return self.width
+            return self.__width
 
         @width.setter
-        def width(self, width):
+        def width(self, value):
             """ width setter"""
+            if type(value) != int:
+                raise TypeError("width must be an integer")
+            if value <= 0:
+                raise ValueError("width must be > 0")
+            self.__width = value
 
         @property
         def height(self):
-            return self.height
+            """ height getter """
+            return self.__height
 
         @height.setter
-        def height(self, height):
+        def height(self, value):
             """ height setter"""
-            self.height = height
+            if type(value) != int:
+                raise TypeError("height must be an integer")
+            if value <= 0:
+                raise ValueError("height must be > 0")
+            self.__height = value
 
         @property
         def x(self):
             """x getter """
-            return self.x
+            return self.__x
 
         @x.setter
-        def x(self, x):
+        def x(self, value):
             """ x setter"""
-            self.x = x
+            if type(value) != int:
+                raise TypeError("x must be an integer")
+            if value < 0:
+                raise ValueError("x must be >= 0")
+            self.__x = value
 
         @property
         def y(self):
             """y getter """
-            return self.y
+            return self.__y
 
         @y.setter
-        def y(self, y):
+        def y(self, value):
             """ y setter"""
-            self.y = y
-
-        @property
-        def id(self):
-            return self.id
-
-        @id.setter
-        def id(self, id):
-            """ height setter"""
-            self.id = id
+            if type(value) != int:
+                raise TypeError("y must be an integer")
+            if value < 0:
+                raise ValueError("y must be >= 0")
+            self.__y = value
