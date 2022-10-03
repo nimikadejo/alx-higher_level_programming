@@ -10,11 +10,10 @@ class Base:
 
     __nb_objects = 0
 
-
     def __init__(self, id=None):
         """class initialization"""
-        if self.id == None:
+        if self.id is None:
             Base.__nb_objects += 1
-            self.id == Base.__nb_objects
+            self.id = Base.__nb_objects
         else:
-            self.id == id
+            self.id = id
