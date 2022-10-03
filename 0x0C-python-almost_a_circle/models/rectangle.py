@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 
+"""
 module for retangle class
 """
 
@@ -28,3 +28,22 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
+    @property
+    def width(self):
+        """ Getter for width """
+        return self.__width
+
+    @property
+    def height(self):
+        """ Getter for height """
+        return self.__height
+
+    @property
+    def x(self):
+        """ Getter for x """
+        return self.__x
+
+    @property
+    def y(self):
+        """ Getter for y """
+        return self.__y
