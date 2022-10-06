@@ -92,3 +92,7 @@ class Rectangle(Base):
     def id(self, id):
         """ id setter"""
         self.__id = id
+
+    def area(self):
+        """ returns area or rectangle"""
+        return (self.__height * self.__width)
