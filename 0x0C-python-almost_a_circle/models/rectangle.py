@@ -99,8 +99,11 @@ class Rectangle(Base):
 
     def display(self):
         """ replaces the size of rectangle with #"""
+        for y in range(self.__y):
+            print()
         for i in range(self.__height):
             for j in range(self.__width):
+                print(" " * self.__x)
                 print("#", end="")
             print()
 
