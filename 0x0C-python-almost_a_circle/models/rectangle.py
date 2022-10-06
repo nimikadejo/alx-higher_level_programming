@@ -101,5 +101,5 @@ class Rectangle(Base):
         """ replaces the size of rectangle with #"""
         for i in range(height):
             for j in range(width):
-                print("#", end='')
-            print('#')
+                print("#", end="")
+            print()
