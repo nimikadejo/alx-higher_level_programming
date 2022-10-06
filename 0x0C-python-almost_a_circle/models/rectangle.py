@@ -100,7 +100,6 @@ class Rectangle(Base):
     def display(self):
         """ replaces the size of rectangle with #"""
         for i in range(width):
-            print("#", end="")
+            print("#", end="", sep='')
             for j in range(height):
-                print("#")
-
+                print("#"\n)
