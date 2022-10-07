@@ -41,3 +41,13 @@ class Square(Rectangle):
         """ string rep of instantiation """
         return ("[Square] ({}) {}/{} - {}".format
                 (self.__id, self.__x, self.__y, self.__size))
+
+    def to_dictionary(self):
+        """dictionary representation of class Square"""
+        dict_ = {}
+        dict_["id"] = self.id
+        dict_["size"] = self.size
+        dict_["x"] = self.x
+        dict_["y"] = self.y
+        return dict_
+

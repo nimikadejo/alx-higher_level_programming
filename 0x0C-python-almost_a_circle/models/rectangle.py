@@ -111,3 +111,8 @@ class Rectangle(Base):
         """ returns string representation of instances"""
         return ("[Rectangle] ({}) {}/{} - {}/{}".format
                 (self.__id, self.__x, self.__y, self.__width, self.__height))
+
+    def to_dictionary(self):
+        """ returns a dictionary rep of class Rectangle """
+        return {'id': self.__id, 'width': self.__width,
+                'height': self.__height, 'x': self.__x, 'y': self.__y}
