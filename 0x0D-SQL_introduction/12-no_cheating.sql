@@ -1,0 +1,4 @@
+-- Update the score of Bob n second_table to 10
+UPDATE second_table
+SET score = 10
+WHERE name="Bob";
